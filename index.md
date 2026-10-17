@@ -1,7 +1,7 @@
 # Privacy Policy for AutoCare
 
 **Effective Date:** September 5, 2026  
-**Last Updated:** October 6, 2026  
+**Last Updated:** October 17, 2026  
 **Publisher:** InnovAxons (`com.innovaxons.autocare`)  
 **Contact:** innovaxons.apps@gmail.com  
 
@@ -79,6 +79,8 @@ You maintain complete sovereignty over your data:
 * **In-App Reset:** You can delete individual vehicles, service items, or your entire database directly through the **Settings > Reset All Data** option inside the app.
 * **Uninstalling the App:** Uninstalling AutoCare from your device automatically purges all locally stored records, databases, thumbnails, and cache from your device storage.
 * **Cloud Backup Deletion:** You can delete your Google Drive backup at any time by deleting the `garage_sync_v3.json` file (and any older `garage_sync_v2.json`) from your Google Drive. Disconnecting Google Drive in Settings stops syncing and revokes AutoCare's access.
+
+AutoCare has no servers and keeps no copy of your data, so nothing is retained after these steps.
 
 ---
 
