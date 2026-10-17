@@ -1,7 +1,7 @@
 # Privacy Policy for AutoCare
 
 **Effective Date:** September 5, 2026  
-**Last Updated:** September 5, 2026  
+**Last Updated:** October 6, 2026  
 **Publisher:** InnovAxons (`com.innovaxons.autocare`)  
 **Contact:** innovaxons.apps@gmail.com  
 
@@ -59,14 +59,17 @@ AutoCare provides optional, user-directed cloud backup options:
 ### A. Google Drive Synchronization (Android / Cross-Platform)
 * **User-Initiated:** Google Drive synchronization is strictly optional and disabled by default.
 * **Direct Transfer:** When you choose to link Google Drive, authentication is handled directly between your device and Google using OAuth 2.0.
-* **Narrow Scope (`drive.file`):** AutoCare requests only the restricted `https://www.googleapis.com/auth/drive.file` scope. This technical boundary guarantees that AutoCare can **only access and modify files that it specifically created** (its own backup archive). AutoCare cannot see, read, or alter any other files, photos, or documents in your Google Drive.
+* **Narrow Scope (`drive.file`):** AutoCare requests only the narrow `https://www.googleapis.com/auth/drive.file` scope. This technical boundary guarantees that AutoCare can **only access and modify files that it specifically created** (its own backup archive). AutoCare cannot see, read, or alter any other files, photos, or documents in your Google Drive.
 * **Zero Intermediaries:** Your backup data travels encrypted directly between your device and Google's servers. No data ever passes through or touches an InnovAxons server.
 
 ### B. Apple iCloud Synchronization (iOS)
-* When operating on iOS devices, synchronization leverages Apple's native iCloud sandbox storage associated with your personal Apple ID.
+* iCloud synchronization is not currently available. On iOS, the "iCloud" option keeps a sync file inside AutoCare's own storage on your device; it is not sent to Apple and is not shared between devices.
 
 ### C. Manual Local Backup & Restore
-* You can export a complete, unencrypted JSON backup of your garage records and receipts to your local storage or files app at any time, allowing you full control and portability of your data.
+* You can export an unencrypted JSON backup of your garage records to your local storage or files app at any time, allowing you full control and portability of your data.
+* Photos (receipts, documents, car photos) are not included in the backup file; they remain on the device.
+* Backup files contain your vehicle records and display preferences only. They never contain your Google account sign-in details, so sharing a backup file does not share access to your Google Drive.
+* Disconnecting Google Drive in Settings revokes AutoCare's access at Google, not just on the device.
 
 ---
 
@@ -75,7 +78,7 @@ AutoCare provides optional, user-directed cloud backup options:
 You maintain complete sovereignty over your data:
 * **In-App Reset:** You can delete individual vehicles, service items, or your entire database directly through the **Settings > Reset All Data** option inside the app.
 * **Uninstalling the App:** Uninstalling AutoCare from your device automatically purges all locally stored records, databases, thumbnails, and cache from your device storage.
-* **Cloud Backup Deletion:** You can delete your Google Drive or iCloud backup archives at any time by unlinking the provider in Settings or directly deleting the backup folder inside your personal cloud storage.
+* **Cloud Backup Deletion:** You can delete your Google Drive backup at any time by deleting the `garage_sync_v3.json` file (and any older `garage_sync_v2.json`) from your Google Drive. Disconnecting Google Drive in Settings stops syncing and revokes AutoCare's access.
 
 ---
 
@@ -97,4 +100,4 @@ If you have questions, concerns, or feedback regarding this Privacy Policy or Au
 
 * **Developer:** InnovAxons
 * **Email:** innovaxons.apps@gmail.com
-* **Official Webpage:** https://innovaxons.github.io/autocare/
+* **Official Webpage:** https://innovaxons.com/autocare/
