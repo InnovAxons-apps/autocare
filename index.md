@@ -102,4 +102,4 @@ If you have questions, concerns, or feedback regarding this Privacy Policy or Au
 
 * **Developer:** InnovAxons
 * **Email:** innovaxons.apps@gmail.com
-* **Official Webpage:** https://innovaxons.com/autocare/
+* **Official Webpage:** https://innovaxons-apps.github.io/autocare/
