@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoCare privacy policy</title>
+  <meta name="description" content="AutoCare collects no data. Records stay on your phone; optional backup goes to your own Google Drive.">
+  <link rel="canonical" href="https://autocare.innovaxons.com/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://autocare.innovaxons.com/privacy/">
+  <link rel="alternate" hreflang="en" href="https://autocare.innovaxons.com/privacy/">
+  <link rel="alternate" hreflang="ar" href="https://autocare.innovaxons.com/ar/privacy/">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a href="#content" class="sr-only">Skip to content</a>
+  <main id="content">
+    <nav class="lang-switcher" aria-label="Language"><strong>English</strong> · <a href="/ar/privacy/" lang="ar" dir="rtl">العربية</a></nav>
+    <nav class="page-nav"><a href="/">AutoCare</a></nav>
+    <h1>Privacy Policy for AutoCare</h1>
+<p><strong>Effective Date:</strong> September 5, 2026<br />
+<strong>Last Updated:</strong> November 3, 2026<br />
+<strong>Publisher:</strong> InnovAxons
+(<code>com.innovaxons.autocare</code>)<br />
+<strong>Contact:</strong> <a
+href="mailto:innovaxons.apps@gmail.com">innovaxons.apps@gmail.com</a></p>
+<hr />
+<h2 id="1-introduction--core-philosophy">1. Introduction &amp; Core
+Philosophy</h2>
+<p>AutoCare ("the Application") is developed and maintained by
+<strong>InnovAxons</strong>. We believe your private vehicle records,
+maintenance history, driving habits, and financial logs belong
+exclusively to you.</p>
+<p>AutoCare is engineered from the ground up on an
+<strong>Offline-First, Data-Sovereign Architecture</strong>. We do not
+operate developer tracking servers, we do not require account
+registration, and we do not collect, sell, monetize, or harvest your
+personal information.</p>
+<hr />
+<h2 id="2-information-we-do-not-collect">2. Information We Do NOT
+Collect</h2>
+<p>Because AutoCare operates without a proprietary backend server:</p>
+<ul>
+<li><strong>No Account Credentials:</strong> You are not required to
+create an account, log in, or provide your name, phone number, or
+password to use AutoCare.</li>
+<li><strong>No Analytics or Telemetry:</strong> The Application contains
+no third-party tracking libraries, advertising SDKs, behavioral
+analytics, or marketing pixels.</li>
+<li><strong>No Vehicle Telematics Harvesting:</strong> Your odometer
+readings, maintenance intervals, vehicle identification numbers (VIN),
+fuel fill-up records, and expenses remain strictly inside your device's
+secure local sandbox.</li>
+</ul>
+<hr />
+<h2 id="3-information-stored-locally-on-your-device">3. Information
+Stored Locally on Your Device</h2>
+<p>All Application data is stored locally in an offline SQLite database
+and within the private sandbox storage directory allocated to AutoCare
+by your mobile operating system (Android / iOS):</p>
+<ul>
+<li><strong>Vehicle Profiles:</strong> Make, model, year, trim, license
+plate, color, and odometer readings.</li>
+<li><strong>Service &amp; Maintenance Logs:</strong> Completed services,
+parts replaced, costs, notes, and service dates.</li>
+<li><strong>Document &amp; Glovebox Records:</strong> Expiration dates
+and metadata for vehicle registration, insurance, and inspections.</li>
+<li><strong>Locally Attached Photos:</strong> Receipt snapshots,
+document scans, and vehicle avatar images.</li>
+</ul>
+<p>This data never leaves your physical device unless you explicitly
+initiate an external backup.</p>
+<hr />
+<h2 id="4-device-permissions--why-they-are-needed">4. Device Permissions
+&amp; Why They Are Needed</h2>
+<p>AutoCare requests only the minimal system permissions necessary to
+deliver its core vehicle tracking utilities:</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Permission</th>
+<th style="text-align: left;">Platform</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Camera</strong></td>
+<td style="text-align: left;">Android / iOS</td>
+<td style="text-align: left;">Enables you to take photos of paper
+workshop receipts, invoices, and vehicle registration cards directly
+within the app. Images are stored locally on your device.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Photo Library /
+Storage</strong></td>
+<td style="text-align: left;">Android / iOS</td>
+<td style="text-align: left;">Enables you to select and attach existing
+photos of receipts, invoices, or vehicle images to your service
+logs.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Notifications</strong></td>
+<td style="text-align: left;">Android / iOS</td>
+<td style="text-align: left;">Used strictly to schedule <strong>local
+offline reminders</strong> on your device when a maintenance interval is
+due or when an insurance/registration document is nearing its expiration
+date. No remote notification server is contacted.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Internet Access</strong></td>
+<td style="text-align: left;">Android / iOS</td>
+<td style="text-align: left;">Used exclusively when you explicitly
+choose to connect and synchronize your backups with your personal Google
+Drive account.</td>
+</tr>
+</tbody>
+</table></div>
+<p>AutoCare <strong>does not</strong> access your microphone, contacts,
+location, audio recordings, or biometric hardware.</p>
+<hr />
+<h2 id="5-cloud-backup--data-synchronization-user-controlled">5. Cloud
+Backup &amp; Data Synchronization (User-Controlled)</h2>
+<p>AutoCare provides optional, user-directed cloud backup options:</p>
+<h3 id="a-google-drive-synchronization-android--cross-platform">A.
+Google Drive Synchronization (Android / Cross-Platform)</h3>
+<ul>
+<li><strong>User-Initiated:</strong> Google Drive synchronization is
+strictly optional and disabled by default.</li>
+<li><strong>Direct Transfer:</strong> When you choose to link Google
+Drive, authentication is handled directly between your device and Google
+using OAuth 2.0.</li>
+<li><strong>Narrow Scope (<code>drive.file</code>):</strong> AutoCare
+requests only the narrow
+<code>https://www.googleapis.com/auth/drive.file</code> scope. This
+technical boundary guarantees that AutoCare can <strong>only access and
+modify files that it specifically created</strong> (its own backup
+archive). AutoCare cannot see, read, or alter any other files, photos,
+or documents in your Google Drive.</li>
+<li><strong>Zero Intermediaries:</strong> Your backup data travels
+encrypted directly between your device and Google's servers. No data
+ever passes through or touches an InnovAxons server.</li>
+</ul>
+<h3 id="b-apple-icloud-synchronization-ios">B. Apple iCloud
+Synchronization (iOS)</h3>
+<ul>
+<li>iCloud synchronization is not currently available. On iOS, the
+"iCloud" option keeps a sync file inside AutoCare's own storage on your
+device; it is not sent to Apple and is not shared between devices.</li>
+</ul>
+<h3 id="c-manual-local-backup--restore">C. Manual Local Backup &amp;
+Restore</h3>
+<ul>
+<li>You can export an unencrypted JSON backup of your garage records to
+your local storage or files app at any time, allowing you full control
+and portability of your data.</li>
+<li>Photos (receipts, documents, car photos) are not included in the
+backup file; they remain on the device.</li>
+<li>Backup files contain your vehicle records and display preferences
+only. They never contain your Google account sign-in details, so sharing
+a backup file does not share access to your Google Drive.</li>
+<li>Disconnecting Google Drive in Settings revokes AutoCare's access at
+Google, not just on the device.</li>
+</ul>
+<hr />
+<h2 id="6-data-retention--deletion">6. Data Retention &amp;
+Deletion</h2>
+<p>You maintain complete sovereignty over your data:</p>
+<ul>
+<li><strong>In-App Reset:</strong> You can delete individual vehicles,
+service items, or your entire database directly through the
+<strong>Settings &gt; Reset All Data</strong> option inside the
+app.</li>
+<li><strong>Uninstalling the App:</strong> Uninstalling AutoCare from
+your device automatically purges all locally stored records, databases,
+thumbnails, and cache from your device storage.</li>
+<li><strong>Cloud Backup Deletion:</strong> You can delete your Google
+Drive backup at any time by deleting the
+<code>garage_sync_v3.json</code> file (and any older
+<code>garage_sync_v2.json</code>) from your Google Drive. Disconnecting
+Google Drive in Settings stops syncing and revokes AutoCare's
+access.</li>
+</ul>
+<p>AutoCare has no servers and keeps no copy of your data, so nothing is
+retained after these steps.</p>
+<hr />
+<h2 id="7-childrens-privacy">7. Children's Privacy</h2>
+<p>AutoCare does not target, collect, or solicit information from anyone
+under the age of 13 (or applicable age in your jurisdiction). The
+Application is a general-purpose vehicle management utility.</p>
+<hr />
+<h2 id="8-changes-to-this-privacy-policy">8. Changes to This Privacy
+Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect new
+app features, updated operating system permissions, or regulatory
+requirements. Any modifications will be posted with an updated
+"Effective Date" at the top of this document.</p>
+<hr />
+<h2 id="9-contact-us">9. Contact Us</h2>
+<p>If you have questions, concerns, or feedback regarding this Privacy
+Policy or AutoCare's data privacy design, please contact us:</p>
+<ul>
+<li><strong>Developer:</strong> InnovAxons</li>
+<li><strong>Email:</strong> <a
+href="mailto:innovaxons.apps@gmail.com">innovaxons.apps@gmail.com</a></li>
+<li><strong>Official Webpage:</strong> <a
+href="https://autocare.innovaxons.com/">https://autocare.innovaxons.com/</a></li>
+</ul>
+
+  </main>
+</body>
+</html>
