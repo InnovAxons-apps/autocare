@@ -20,6 +20,4 @@ One shared `style.css` (system fonts, light and dark, logical properties for RTL
 ## Source of truth
 The English policy is `docs/release/PRIVACY_POLICY.md` in the app repository. Change it there first, then regenerate `privacy/index.html` (and update the Arabic translation, which defers to the English text). The Play Console privacy link is `https://autocare.innovaxons.com/privacy/`. The terms pages are edited here directly, and Google Auth Platform branding links to `https://autocare.innovaxons.com/terms/`.
 
-When the app is live on Google Play, replace the `<!-- PLAY_LINK -->` line and the "Coming soon" text on both home pages with the store link.
-
 Contact: `innovaxons.apps@gmail.com`
