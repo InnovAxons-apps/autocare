@@ -91,3 +91,120 @@ nav.page-nav {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+
+/* Additional styles for schedule tables & CTA */
+.cta-box {
+  background: var(--card);
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.cta-box p {
+  margin: .5rem 0 1rem;
+  font-weight: 500;
+}
+.btn-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  background: var(--primary);
+  color: #ffffff !important;
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity .15s;
+}
+.btn-play:hover {
+  opacity: .9;
+  text-decoration: none;
+}
+.badge-severe {
+  display: inline-block;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: .15rem .5rem;
+  border-radius: .25rem;
+  font-size: .8rem;
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  .badge-severe {
+    background: #450a0a;
+    color: #fca5a5;
+    border-color: #7f1d1d;
+  }
+}
+.badge-std {
+  display: inline-block;
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  padding: .15rem .5rem;
+  border-radius: .25rem;
+  font-size: .8rem;
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  .badge-std {
+    background: #052e16;
+    color: #86efac;
+    border-color: #14532d;
+  }
+}
+.source-box {
+  font-size: .875rem;
+  color: var(--muted);
+  border-inline-start: 3px solid var(--muted);
+  padding-inline-start: .75rem;
+  margin: 1.5rem 0;
+}
+.source-box p {
+  color: var(--muted);
+  margin: .25rem 0;
+}
+.schedule-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.schedule-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .15s;
+}
+.schedule-card:hover {
+  border-color: var(--primary);
+  text-decoration: none;
+}
+.schedule-card h3 {
+  margin: 0 0 .25rem;
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+.schedule-card p {
+  margin: 0;
+  font-size: .9rem;
+  color: var(--muted);
+}
+.breadcrumbs {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.breadcrumbs a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
