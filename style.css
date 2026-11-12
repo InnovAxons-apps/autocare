@@ -208,3 +208,9 @@ nav.page-nav {
 .breadcrumbs a:hover {
   text-decoration: underline;
 }
+
+/* Phones: drop the notes column so the table fits without sideways scrolling. */
+@media (max-width: 34rem) {
+  table { min-width: 0; }
+  th:nth-child(4), td:nth-child(4) { display: none; }
+}
